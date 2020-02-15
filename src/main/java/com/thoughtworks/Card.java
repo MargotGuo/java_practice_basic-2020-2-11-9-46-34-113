@@ -5,11 +5,11 @@ public class Card {
   private String suit;       // "黑桃","红桃","梅花","方片"
 
   public Card(int cardPoint, String suit) {
-    this.cardPoint = format(cardPoint);
+    this.cardPoint = formatPokerPoint(cardPoint);
     this.suit = suit;
   }
 
-  private String format(int number) {
+  private String formatPokerPoint(int number) {
     switch (number) {
       case 1:
         return "A";
